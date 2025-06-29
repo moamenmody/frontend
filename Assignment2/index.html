@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <form >
+        <!-- Personal Data Section -->
+        <fieldset>
+            <legend>Personal Data</legend>
+            
+            <!-- Title Box with Blue Color -->
+            <div style="background-color: blue; color: white; padding: 10px;">
+                <h2>Your Name</h2>
+            </div>
+
+            <!-- Your Name Box with Yellow Background -->
+            <div style="background-color: orange; padding: 10px; margin-bottom: 15px;">
+                <label for="firstName">first name:</label>
+                <input type="text" id="firstName" name="firstName" value="ex.ahmed" required>
+
+                <label for="secondName">second name:</label>
+                <input type="text" id="secondName" name="secondName" value="ex.bahnasay" required>
+            </div>
+
+            <!-- Other Fields -->
+            <label for="phone">your phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="rePassword">re-password:</label>
+            <input type="password" id="rePassword" name="rePassword" required>
+
+            <!-- Gender Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <!-- Status Radio Buttons -->
+            <label>Status:</label>
+            <input type="radio" id="student" name="status" value="student">
+            <label for="student">Student</label>
+            <input type="radio" id="graduated" name="status" value="graduated">
+            <label for="graduated">Graduated</label>
+
+            <!-- University Selection -->
+            <label for="university">University:</label>
+            <select id="university" name="university">
+                <option value="auc">AUC</option>
+                <option value="aust">AUST</option>
+                <option value="university_of_cairo">University of Cairo</option>
+            </select>
+
+            <!-- Car Brands Select with Groups -->
+            <label for="cars">Choose your car brand:</label>
+            <select id="cars" name="cars">
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                    <option value="bmw">BMW</option>
+                </optgroup>
+                <optgroup label="American Cars">
+                    <option value="ford">Ford</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="tesla">Tesla</option>
+                </optgroup>
+                <optgroup  label="Japanese Cars" disabled>
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                    <option value="nissan">Nissan</option>
+                </optgroup>
+            </select>
+            <!-- Submit Button -->
+            <button type="submit">
+                <img src="clipart-play-button-green-with-blue-border-256x256-f787.png" alt="Submit" width="50" height="50   ">
+            </button>
+        </form  >
+    </body>
+</html>
